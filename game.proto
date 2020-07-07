@@ -23,7 +23,7 @@ message GameReview {
 
 message GameReviews { repeated GameReview games = 1; }
 
-service GemaService {
+service GameService {
   rpc GetGameReviews(google.protobuf.Empty) returns (GameReviews) {};
   rpc GetGameReview(GameReviewRequest) returns (GameReview) {};
 }
